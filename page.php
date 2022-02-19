@@ -6,7 +6,6 @@ if($conn == false){
 	exit();
 }
 $page = $_GET['id'];
-//echo $page;
 $query = mysqli_query($conn, "SELECT * FROM $dbarticles WHERE id_teacher='$page' ");
 ?>
 <!doctype html>
